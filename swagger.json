@@ -1,0 +1,60 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "OCTO",
+    "description": "Simple Demo",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/hello": {
+      "get": {
+        "summary": "Retrieves data",
+        "responses": {
+          "200": {
+            "description": "returns data",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Puts data",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "some data"
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "post": {
+        "summary": "Posts data"
+      },
+      "delete": {
+        "summary": "Deletes data"
+      }
+    },
+    "/goodbye": {
+      "get": {},
+      "post": {
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "description",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      }
+    }
+  }
+}
